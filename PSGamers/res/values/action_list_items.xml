@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   	<string-array name="action_list_header_items">
+	    <item>Friends</item>
+	    <item>Games</item>
+	</string-array>    
+	
+	<string-array name="action_list_subheader_items">
+	    <item>Informations about your PSN friends</item>
+	    <item>Trophy information about your games</item>
+	</string-array>
+	    
+</resources>

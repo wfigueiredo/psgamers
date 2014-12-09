@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/tableLayout1"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:shrinkColumns="2,3">
+    
+    <!-- Header space -->
+    <TableRow  
+        android:id="@+id/tableRow0"  
+        android:layout_height="wrap_content"  
+        android:layout_width="fill_parent">  
+          
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_span="4"
+            android:layout_height="15dip"/>
+          
+    </TableRow>
+    
+    <!-- Header (PSN Avatars and IDs)  -->
+    <TableRow
+        android:id="@+id/tableRowUserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <RelativeLayout 
+            android:id="@+id/headerColumn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3">
+            
+	        <!--  
+	        <TextView 
+	            android:id="@+id/fakeSpace1"
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"
+	            />
+	        
+	        <TextView 
+	            android:id="@+id/fakeSpace2"
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"
+	            />
+	        -->
+	        
+	        <ImageView
+	            android:id="@+id/avatarClient"
+	            android:src="@drawable/abel_avatar"
+	            android:layout_width="48dip"
+	            android:layout_height="48dip"
+	            android:layout_centerHorizontal="true"
+	            />
+	        
+	        <TextView
+	            android:id="@+id/psnIdClient"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dip"
+	            android:singleLine="true"
+	            android:layout_below="@+id/avatarClient"
+		        android:textSize="15dip"
+		        android:textStyle="bold"
+		        android:textColor="#F5F0F2"
+	            android:text="darkfighterk9999"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/headerColumn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:layout_column="4">
+            
+	        <ImageView
+	            android:id="@+id/avatarClientFriend"
+	            android:src="@drawable/abel_avatar"
+	            android:layout_centerHorizontal="true"
+	            android:layout_width="48dip"
+	            android:layout_height="48dip"/>
+	        
+	        <TextView
+	            android:id="@+id/psnIdClientFriend"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dip"
+	            android:singleLine="true"
+	            android:layout_below="@+id/avatarClientFriend"
+		        android:textSize="15dip"
+		        android:textStyle="bold"
+		        android:textColor="#F5F0F2"
+	            android:text="feldark"/>
+            
+        </RelativeLayout>
+        
+    </TableRow>
+
+</TableLayout>

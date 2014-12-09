@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/ps3_black_bg">
+    
+    <ScrollView android:id="@+id/homeScroll" 
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content">
+        
+		<RelativeLayout
+		    android:id="@+id/homeContainer" 
+	   		android:layout_width="fill_parent"
+	   		android:layout_height="wrap_content">
+	    		
+			<!--  Screen Header-->
+			<RelativeLayout 
+			    android:id="@+id/profile_header"
+			    android:layout_width="fill_parent"
+			    android:layout_height="45dip"
+			    android:background="@drawable/header_gradient"
+			    android:paddingTop="5dip"
+			    android:paddingBottom="5dip">
+			        
+			        <ImageView
+			            android:id="@+id/profile_logo"
+			            android:src="@drawable/psn_user_icon"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"/>
+			        
+			        <TextView
+			            android:id="@+id/headerTitle"
+			            android:text="@string/profile" 
+			            android:layout_toRightOf="@+id/profile_logo"
+			            android:layout_alignBottom="@+id/profile_logo"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textStyle="bold"
+			            android:textSize="25dip"
+			            android:textColor="#E3E6E8"
+			            android:layout_marginLeft="10dip"/>
+			        
+			</RelativeLayout>
+			
+			<ImageView 
+		        android:id="@+id/psnAvatar"
+		        android:layout_width="64dip"
+		        android:layout_height="64dip"
+		        android:layout_marginLeft="15dip"
+		        android:layout_marginTop="20dip"
+		        android:layout_marginBottom="15dip"
+		        android:layout_below="@+id/profile_header"
+			    android:contentDescription="@string/psnAvatarDesc"/>
+			
+			<ImageView 
+		        android:id="@+id/psnPlus"
+		        android:src="@drawable/psn_plus_icon"
+		        android:layout_width="24dip"
+		        android:layout_height="24dip"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginTop="10dip"
+		        android:layout_below="@+id/profile_header"
+			    android:contentDescription="@string/psnPlusDesc"/>
+
+			<TextView
+		        android:id="@+id/psnId"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/psnAvatar"
+		        android:layout_alignBottom="@+id/psnAvatar"
+		        android:layout_alignLeft="@+id/psnAboutMe"
+		        android:textSize="20dip"
+		        android:textStyle="bold"
+		        android:textColor="#F5F0F2" />
+			
+			<TextView
+		        android:id="@+id/psnAboutMe"
+		        style="@style/comment_ballon"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/psnAvatar"
+		        android:layout_alignTop="@+id/psnAvatar"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginRight="5dip"
+		        android:textSize="13dip"
+		        android:textColor="#474747" />
+			
+			
+			<ImageView 
+		        android:id="@+id/psnLevelStar"
+		        android:src="@drawable/psn_level_star_logo"
+		        android:layout_below="@+id/psnAvatar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:layout_alignLeft="@+id/psnAvatar"
+			    android:contentDescription="@string/psnLevelStarDesc"/>
+			
+			<TextView
+		        android:id="@+id/psnLevel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/psnLevelStar"
+		        android:layout_alignBottom="@+id/psnLevelStar"
+		        android:layout_marginLeft="5dip"
+		        android:textSize="30dip"
+		        android:textStyle="bold"
+		        android:textColor="#F5F0F2" />
+			
+			<ProgressBar
+	         	android:id="@+id/psnProgressBar"
+		        style="@style/ProgressHorizontalStyle"
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:layout_below="@+id/psnLevelStar"
+		        android:layout_marginRight="10dip"
+		        android:layout_alignLeft="@+id/psnLevelStar"
+		        android:layout_marginTop="10dip" />
+			
+			<ImageView 
+		        android:id="@+id/psnTrophies"
+		        android:src="@drawable/psn_trophies_logo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/psnLevel"
+		        android:layout_alignBottom="@+id/psnLevelStar"
+		        android:layout_marginLeft="50dip"
+			    android:contentDescription="@string/psnLevelStarDesc"/>
+			
+			<TextView
+		        android:id="@+id/psnTrophyCount"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/psnTrophies"
+		        android:layout_marginLeft="10dip"
+		        android:layout_alignBottom="@+id/psnTrophies"
+		        android:textSize="30dip"
+		        android:textStyle="bold"
+		        android:textColor="#F5F0F2" />
+			
+			<TextView
+		        android:id="@+id/psnProgressPercentMark"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/psnTrophies"
+		        android:layout_marginLeft="3dip"
+		        android:layout_alignRight="@+id/psnProgressBar"
+		        android:text="%"
+		        android:textSize="20dip"
+		        android:textColor="#B0BFD1" />
+			
+			<TextView
+		        android:id="@+id/psnProgressPercent"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@+id/psnProgressPercentMark"
+		        android:layout_alignBottom="@+id/psnTrophies"
+		        android:textSize="20dip"
+		        android:textColor="#B0BFD1" />
+			
+			<Button 
+			    android:id="@+id/trophyLadderBtn"
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/psnProgressBar"
+			    android:layout_marginTop="15dip"
+			    android:drawableLeft="@drawable/psn_trophies_logo"
+		        android:background="@drawable/bg_translucent_black"
+			    android:text="@string/trophyLadder"
+		        android:textColor="#F5F0F2"
+		        android:textStyle="bold"
+		        android:textSize="15dip"
+			    android:layout_alignRight="@+id/psnProgressBar"/>
+			
+		</RelativeLayout>
+	
+    </ScrollView>
+		
+  	<ListView 
+      	android:id="@+id/actionList"
+      	android:layout_below="@+id/homeScroll"
+      	android:layout_width="fill_parent"
+      	android:layout_height="fill_parent"
+      	android:layout_marginTop="20dip"
+      	style="@style/list_style"/>
+  	
+</RelativeLayout>

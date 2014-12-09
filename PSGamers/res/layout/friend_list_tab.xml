@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+	<!-- Screen Header -->
+	<RelativeLayout 
+	    android:id="@+id/friendList_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:background="@drawable/header_gradient"
+	    android:paddingTop="5dip"
+	    android:paddingBottom="5dip"
+	    android:layout_marginBottom="3dip">
+	        
+	        <ImageView
+	            android:id="@+id/friendList_logo"
+	            android:src="@drawable/psn_friends_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	        
+	        <TextView
+	            android:id="@+id/headerTitle"
+	            android:text="@string/friends" 
+	            android:layout_toRightOf="@+id/friendList_logo"
+	            android:layout_alignBottom="@+id/friendList_logo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textStyle="bold"
+	            android:textSize="25dip"
+	            android:textColor="#E3E6E8"
+	            android:layout_marginLeft="10dip"/>
+	        
+	</RelativeLayout>
+	<TabHost 
+	    android:id="@android:id/tabhost"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:layout_below="@+id/friendList_header">
+	    
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+	        
+	        <TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" />
+	        
+	        <FrameLayout
+	            android:id="@android:id/tabcontent"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"/>
+	        
+	    </LinearLayout>
+	
+	</TabHost>
+</RelativeLayout>

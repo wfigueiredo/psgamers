@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/ps3_blue_bg">
+	    
+	    <TextView 
+		    android:id="@+id/platinumTrophyCount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/trophy_ladder_degree"
+		    android:width="70dip"
+		    android:layout_alignParentRight="true" />
+	
+	    <TextView 
+		    android:id="@+id/platinumTrophyTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/totalTrophies"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignBottom="@+id/platinumTrophyCount"
+		    android:layout_marginLeft="5dip"
+		    android:layout_marginRight="5dip"
+		    android:text="@string/platinum"
+		    style="@style/platinum_trophy_title_degree" />
+	    
+	    <ImageView 
+	        android:id="@+id/platinumTrophy"
+	        android:src="@drawable/psn_platinum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/goldTrophyCount"
+	        android:layout_above="@+id/goldTrophyCount"
+	        android:contentDescription="@string/psnPlatinumDesc"/>
+	    
+	    <TextView 
+		    android:id="@+id/goldTrophyCount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/trophy_ladder_degree"
+		    android:width="100dip"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/platinumTrophyCount"/>
+	    
+	    <TextView 
+		    android:id="@+id/goldTrophyTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignBottom="@+id/goldTrophyCount"
+		    android:layout_marginLeft="5dip"
+		    android:text="@string/gold"
+		    style="@style/gold_trophy_title_degree" />
+	    
+	    <ImageView 
+	        android:id="@+id/goldTrophy"
+	        android:src="@drawable/psn_gold"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/silverTrophyCount"
+	        android:layout_above="@+id/silverTrophyCount"
+	        android:contentDescription="@string/psnGoldDesc" />
+	    
+	    <TextView 
+		    android:id="@+id/silverTrophyCount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/trophy_ladder_degree"
+		    android:width="130dip"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/goldTrophyCount" />
+	    
+	    <TextView 
+		    android:id="@+id/silverTrophyTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignBottom="@+id/silverTrophyCount"
+		    android:layout_marginLeft="5dip"
+		    android:text="@string/silver"
+		    style="@style/silver_trophy_title_degree" />
+	     
+	    <ImageView 
+	        android:id="@+id/silverTrophy"
+	        android:src="@drawable/psn_silver"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/bronzeTrophyCount"
+	        android:layout_above="@+id/bronzeTrophyCount"
+	        android:contentDescription="@string/psnSilverDesc" />
+	    
+	    <TextView 
+		    android:id="@+id/bronzeTrophyCount"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/trophy_ladder_degree"
+		    android:width="160dip"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/silverTrophyCount" />
+	    
+	    <TextView 
+		    android:id="@+id/bronzeTrophyTitle"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignBottom="@+id/bronzeTrophyCount"
+		    android:layout_marginLeft="5dip"
+		    android:text="@string/bronze"
+		    style="@style/bronze_trophy_title_degree" />
+	    
+	    <ImageView 
+	        android:id="@+id/bronzeTrophy"
+	        android:src="@drawable/psn_bronze"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/bronzeTrophyCount"
+	        android:layout_alignBottom="@+id/bronzeTrophyCount"
+	        android:layout_marginRight="3dip"
+	        android:contentDescription="@string/psnBronzeDesc" />
+	    
+		<TextView
+	        android:id="@+id/totalTrophyCount"
+	        android:text="@string/total"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/bronzeTrophyCount"
+	        android:layout_marginTop="20dip"
+	        android:layout_alignRight="@+id/bronzeTrophyTitle"
+	        android:textSize="20dip"
+	        android:textStyle="bold"
+	        android:textColor="#F5F0F2" />
+		
+	    <ImageView
+	        android:id="@+id/allTrophies"
+	        android:src="@drawable/psn_trophies_logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/totalTrophyCount"
+	        android:layout_marginLeft="10dip"
+	        android:layout_alignBottom="@+id/totalTrophyCount"
+	        android:contentDescription="@string/psnTrophiesDesc"/>
+	    
+		<TextView
+	        android:id="@+id/totalTrophies"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/allTrophies"
+	        android:layout_toRightOf="@+id/allTrophies"
+	        android:layout_marginLeft="10dip"
+	        android:textSize="25dip"
+	        android:textStyle="bold"
+	        android:textColor="#E9E9F5" />
+	    
+	</RelativeLayout>
+	
+</ScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- App Name -->
+    <string name="app_name">PSGamers</string>
+	
+	<!-- Image Descriptions -->
+    <string name="psnLogoDesc">PSN Logo</string>
+    <string name="psnUserLogoDesc">PSN User Logo</string>
+    <string name="psnPasswordLogoDesc">PSN Password Logo</string>
+    <string name="psnAvatarDesc">PSN Avatar Logo</string>
+    <string name="psnLevelStarDesc">PSN Level Star</string>
+    <string name="psnPlusDesc">PSN Plus</string>
+    <string name="actionDesc">Action</string>
+    <string name="actionListImageDesc">Action List Image</string>
+    <string name="rightArrowDesc">Right arrow</string>
+    <string name="psnPlatinumDesc">Platinum trophy</string>
+    <string name="psnGoldDesc">Gold trophy</string>
+    <string name="psnSilverDesc">Silver trophy</string>
+    <string name="psnBronzeDesc">Bronze trophy</string>
+    <string name="psnTrophiesDesc">All trophies</string>
+    <string name="psnFriendAvatarDesc">PSN Friend Avatar Logo</string>
+	
+    <!-- Form Fields -->
+    <string name="username">Username</string>
+    <string name="useAnotherAccount">Use another account</string>
+    <string name="rememberEmail">Remember email</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="error">Error</string>
+    <string name="returnMsg">Return</string>
+    
+    <!-- Titles -->
+    <string name="profile">Profile</string>
+    <string name="progress">Progress</string>
+    <string name="latestTrophies">Latest Trophies</string>
+    <string name="lastSignIn">Last sign in:</string>
+    <string name="actions">Actions</string>
+    <string name="friends">Friends</string>
+    <string name="trophyLadder">Trophy Ladder</string>
+    <string name="total">Total:</string>
+    <string name="trophies">Trophies</string>
+    <string name="platinum">Platinum</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="bronze">Bronze</string>
+    <string name="games">Games</string>
+    <string name="compare">Compare</string>
+    <string name="game_list">Game List</string>
+    <string name="friend_list">Friend List</string>
+    <string name="hiddenTrophy">Hidden Trophy</string>
+    <string name="status">Status</string>
+    <string name="title">Title:</string>
+    <string name="grade">Grade:</string>
+    <string name="earned">Earned:</string>
+    <string name="details">Details:</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="away">Away</string>
+    <string name="pending">Pending Response</string>
+    
+    <!-- Dialog messages -->
+    <string name="retrievingPSNUserData">Retrieving user data from PSN&#8230;</string>
+    <string name="retrieving_friend_info">Retrieving friend information&#8230;</string>
+    <string name="retrieving_game_info">Retrieving game information&#8230;</string>
+    <string name="retrieving_trophy_info">Retrieving trophy information&#8230;</string>
+    <string name="signing_in">Signing in&#8230;</string>
+    
+    <!-- Error Messages -->
+    <string name="wifi_not_enabled">Sorry. Wi-Fi connection not enabled.</string>
+    <string name="login_not_successful">Sorry. Login process was not successful.</string>
+    <string name="provide_login_fields">Please, provide the email and password fields.</string>
+    <string name="psn_unavailable_error">Playstation Network service unavailable.</string>
+    <string name="psn_login_error">Email or password not correct.</string>
+    <string name="psn_unreachable_error">Could not connect to Playstation Network service.</string>
+    <string name="psn_unauthorized_error">Login not authorizided by Playstation Network service.</string>
+    <string name="psn_error">An error occurred while loggin in Playstation Network.</string>
+    
+</resources>

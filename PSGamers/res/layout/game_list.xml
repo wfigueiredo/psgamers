@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/ps3_black_bg">
+    
+	<!--  Screen Header-->
+	<RelativeLayout 
+	    android:id="@+id/gameList_header"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:background="@drawable/header_gradient"
+	    android:paddingTop="5dip"
+	    android:paddingBottom="5dip">
+	        
+	        <ImageView
+	            android:id="@+id/gameList_logo" 
+	            android:src="@drawable/ps3_controller_icon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	        
+	        <TextView
+	            android:id="@+id/headerTitle"
+	            android:text="@string/game_list" 
+	            android:layout_toRightOf="@+id/gameList_logo"
+	            android:layout_alignBottom="@+id/gameList_logo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textStyle="bold"
+	            android:textSize="25dip"
+	            android:textColor="#E3E6E8"
+	            android:layout_marginLeft="10dip"/>
+	        
+	</RelativeLayout>
+	
+	<ListView 
+      	android:id="@+id/gameList"
+      	style="@style/list_style"
+      	android:layout_width="fill_parent"
+      	android:layout_height="fill_parent"
+      	android:layout_marginTop="10dip"/>
+    
+</LinearLayout>

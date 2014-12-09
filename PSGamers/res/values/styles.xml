@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!-- =============================================================== -->
+ 	<!-- Action List Style 			                                     -->
+	<!-- =============================================================== -->
+	<style name="list_style">
+		<item name="android:listSelector">@drawable/selector_action_list</item>
+		<item name="android:divider">@drawable/list_divider_bl</item>
+		<item name="android:dividerHeight">1dip</item>
+		<item name="android:cacheColorHint">#00000000</item>
+		<item name="android:headerDividersEnabled">true</item>
+		<item name="android:footerDividersEnabled">true</item>
+		<item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+		<item name="android:scrollbarAlwaysDrawHorizontalTrack">true</item>
+		<item name="android:scrollbars">vertical</item>
+	</style>
+    
+	<!-- =============================================================== -->
+ 	<!-- Title Bar Style                                      -->
+	<!-- =============================================================== -->
+	<style name="title_bar">
+	    <item name="android:background">@drawable/black_container</item>
+	    <item name="android:textSize">20dip</item>
+	    <item name="android:textColor">#E0DCDE</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:padding">5dip</item>
+	</style>
+	
+	<!-- =============================================================== -->
+ 	<!-- Trophy Ladder Degree Style                                      -->
+	<!-- =============================================================== -->
+	<style name="trophy_ladder_degree">
+	    <item name="android:background">@drawable/white_container</item>
+	    <item name="android:textSize">20dip</item>
+	    <item name="android:textColor">#E0DCDE</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:padding">5dip</item>
+	</style>
+	
+	<!-- =============================================================== -->
+ 	<!-- Comment baloon Style                                      -->
+	<!-- =============================================================== -->
+	<style name="comment_ballon">
+	    <item name="android:background">@drawable/baloon_container</item>
+	    <item name="android:textSize">15dip</item>
+	    <item name="android:textColor">#4A4647</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:padding">5dip</item>
+	</style>
+	
+	<!-- =============================================================== -->
+ 	<!-- Trophy Title Degree Style                                       -->
+	<!-- =============================================================== -->
+	<style name="trophy_title_degree">
+	    <item name="android:textSize">13dip</item>
+	    <item name="android:textColor">#E0DCDE</item>
+	    <item name="android:padding">3dip</item>
+		<item name="android:gravity">center_vertical|center_horizontal</item>
+	    <item name="android:width">75dip</item>
+	</style>
+	
+	<style name="platinum_trophy_title_degree" parent="trophy_title_degree">
+	    <item name="android:background">@drawable/platinum_trophy_container</item>
+	</style>
+	
+	<style name="gold_trophy_title_degree" parent="trophy_title_degree">
+	    <item name="android:background">@drawable/gold_trophy_container</item>
+	</style>
+	
+	<style name="silver_trophy_title_degree" parent="trophy_title_degree">
+	    <item name="android:background">@drawable/silver_trophy_container</item>
+	</style>
+	
+	<style name="bronze_trophy_title_degree" parent="trophy_title_degree">
+	    <item name="android:background">@drawable/bronze_trophy_container</item>
+	</style>
+	
+	<!-- =============================================================== -->
+ 	<!-- Progress Bar style                                              -->
+	<!-- =============================================================== -->
+	<style name="ProgressHorizontalStyle" parent="@android:style/Widget.ProgressBar">
+	    <item name="android:indeterminateOnly">false</item>
+	    <item name="android:progressDrawable">@drawable/progress_horizontal_drawable</item>
+	    <item name="android:minHeight">5dip</item>
+	    <item name="android:maxHeight">5dip</item>
+	    <item name="android:max">100</item>
+	</style>
+	
+</resources>

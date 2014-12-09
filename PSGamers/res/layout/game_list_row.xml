@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView 
+        android:id="@+id/gameThumbnail_list"
+        android:layout_width="96dip"
+        android:layout_height="64dip"
+	    android:layout_marginTop="15dip"
+	    android:contentDescription="@string/psnAvatarDesc"/>
+    
+    <TextView
+        android:id="@+id/gameTitle_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gameThumbnail_list"
+        android:layout_alignTop="@+id/gameThumbnail_list"
+        android:layout_marginLeft="10dip"
+        android:singleLine="true"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:textColor="#F5F0F2" />
+    
+    <ProgressBar
+       	android:id="@+id/gameProgressBar_list"
+        style="@style/ProgressHorizontalStyle"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_toRightOf="@+id/gameThumbnail_list"
+        android:layout_alignBottom="@+id/gameThumbnail_list" />
+    
+    <TextView
+        android:id="@+id/gameProgressPercentMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_above="@+id/gameProgressBar_list"
+        android:layout_alignRight="@+id/gameProgressBar_list"
+        android:text="%"
+        android:textStyle="bold"
+        android:textSize="15dip"
+        android:textColor="#B0BFD1" />
+    
+	<TextView
+        android:id="@+id/gameProgressPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/gameProgressPercentMark"
+        android:layout_alignBottom="@+id/gameProgressPercentMark"
+        android:layout_marginLeft="3dip"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:textColor="#B0BFD1" />
+	
+    <ImageView 
+        android:id="@+id/platinum_trophy_list"
+        android:src="@drawable/psn_platinum"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_toLeftOf="@+id/gameProgressPercent"
+        android:layout_alignBottom="@+id/gameProgressPercent"
+	    android:contentDescription="@string/psnLevelStarDesc"/>
+    
+    <TextView
+        android:id="@+id/earned_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="10dip"
+        android:text="@string/earned"
+        android:textSize="15dip"
+        android:layout_alignLeft="@+id/gameThumbnail_list"
+        android:layout_below="@+id/gameThumbnail_list"
+        android:textColor="#F5F0F2" />
+    
+    <ImageView 
+        android:id="@+id/bronze_trophy"
+        android:src="@drawable/psn_bronze"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_below="@+id/gameProgressBar_list"
+        android:layout_toRightOf="@+id/earned_title"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBottom="@+id/earned_title"
+	    android:contentDescription="@string/psnLevelStarDesc"/>
+    
+    <TextView
+        android:id="@+id/bronze_trophies_earned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:textSize="15dip"
+        android:layout_alignBottom="@+id/bronze_trophy"
+        android:layout_toRightOf="@+id/bronze_trophy"
+        android:textColor="#F5F0F2" />
+    
+    <ImageView 
+        android:id="@+id/silver_trophy"
+        android:src="@drawable/psn_silver"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_below="@+id/gameProgressBar_list"
+        android:layout_toRightOf="@+id/bronze_trophies_earned"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBottom="@+id/earned_title"
+	    android:contentDescription="@string/psnLevelStarDesc"/>
+    
+    <TextView
+        android:id="@+id/silver_trophies_earned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:textSize="15dip"
+        android:layout_toRightOf="@+id/silver_trophy"
+        android:layout_alignBottom="@+id/silver_trophy"
+        android:textColor="#F5F0F2" />
+    
+    <ImageView 
+        android:id="@+id/gold_trophy"
+        android:src="@drawable/psn_gold"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_below="@+id/gameProgressBar_list"
+        android:layout_toRightOf="@+id/silver_trophies_earned"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBottom="@+id/earned_title"
+	    android:contentDescription="@string/psnLevelStarDesc"/>
+    
+    <TextView
+        android:id="@+id/gold_trophies_earned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:textSize="15dip"
+        android:layout_toRightOf="@+id/gold_trophy"
+        android:layout_alignBottom="@+id/gold_trophy"
+        android:textColor="#F5F0F2" />
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/tableLayout1"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:stretchColumns="*">
+    
+    <TableRow  
+        android:id="@+id/tableRowGameCompare"  
+        android:layout_height="wrap_content"  
+        android:layout_width="fill_parent"  
+        android:gravity="center_horizontal">
+          
+		    <ImageView 
+			    android:src="@drawable/bayonetta_game_image"
+		        android:id="@+id/gameThumbnail_compare"
+		        android:layout_column="0"
+		        android:layout_width="0dip"
+		        android:layout_height="64dip"
+			    android:contentDescription="@string/psnAvatarDesc"/>
+		    
+		    <TextView
+		        android:text="Metal Gear Solid 3"
+		        android:id="@+id/gameTitle_compare"
+		        android:layout_column="1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dip"
+		        android:inputType="textMultiLine"
+		        android:textSize="14dip"
+		        android:textStyle="bold"
+		        android:textColor="#F5F0F2" />
+		    
+		    <ProgressBar
+		       	android:id="@+id/gameProgressBar_client_compare"
+		        android:layout_column="2"
+		       	android:progress="82"
+		        style="@style/ProgressHorizontalStyle"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginRight="5dip"
+		        android:layout_marginBottom="10dip"
+		        />
+		    
+		    <ProgressBar
+		       	android:id="@+id/gameProgressBar_clientFriend_compare"
+		        android:layout_column="3"
+		       	android:progress="28"
+		        style="@style/ProgressHorizontalStyle"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginLeft="5dip"
+		        android:layout_marginRight="5dip"
+		        android:layout_marginBottom="10dip"
+		        />
+		    
+		    <!--  
+		    <RelativeLayout 
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		        android:layout_column="2"
+		        >
+		        
+			    <ProgressBar
+			       	android:id="@+id/gameProgressBar_compare"
+			        style="@style/ProgressHorizontalStyle"
+			        android:layout_height="wrap_content"
+			        android:layout_width="fill_parent"
+			        android:layout_marginLeft="10dip"
+			        android:layout_marginRight="10dip"
+			        android:layout_marginBottom="10dip"
+			        />
+			    
+			    <TextView
+			        android:id="@+id/gameProgressPercentMark"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="3dip"
+			        android:layout_above="@+id/gameProgressBar_compare"
+			        android:layout_alignRight="@+id/gameProgressBar_list"
+			        android:text="%"
+			        android:textStyle="bold"
+			        android:textSize="15dip"
+			        android:textColor="#B0BFD1" />
+			    
+				<TextView
+			        android:id="@+id/gameProgressPercent"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_toLeftOf="@+id/gameProgressPercentMark"
+			        android:layout_alignBottom="@+id/gameProgressPercentMark"
+			        android:layout_marginLeft="3dip"
+			        android:textSize="15dip"
+			        android:textStyle="bold"
+			        android:textColor="#B0BFD1" />
+				
+			    <ImageView 
+			        android:id="@+id/platinum_trophy_compare_client"
+			        android:src="@drawable/psn_platinum"
+			        android:layout_width="24dip"
+			        android:layout_height="24dip"
+			        android:layout_toLeftOf="@+id/gameProgressPercent"
+			        android:layout_alignBottom="@+id/gameProgressPercent"
+				    android:contentDescription="@string/psnLevelStarDesc"/>
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		        android:layout_column="3"
+		    	>
+		        
+			    <ProgressBar
+			       	android:id="@+id/gameProgressBar_compare"
+			        style="@style/ProgressHorizontalStyle"
+			        android:layout_height="wrap_content"
+			        android:layout_width="fill_parent"
+			        android:layout_marginLeft="10dip"
+			        android:layout_marginRight="10dip"
+			        android:layout_marginBottom="10dip"
+			        android:layout_toRightOf="@+id/gameThumbnail_list"
+			        android:layout_alignBottom="@+id/gameThumbnail_list" />
+			    
+			    <TextView
+			        android:id="@+id/gameProgressPercentMark"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="3dip"
+			        android:layout_above="@+id/gameProgressBar_compare"
+			        android:layout_alignRight="@+id/gameProgressBar_list"
+			        android:text="%"
+			        android:textStyle="bold"
+			        android:textSize="15dip"
+			        android:textColor="#B0BFD1" />
+			    
+				<TextView
+			        android:id="@+id/gameProgressPercent"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_toLeftOf="@+id/gameProgressPercentMark"
+			        android:layout_alignBottom="@+id/gameProgressPercentMark"
+			        android:layout_marginLeft="3dip"
+			        android:textSize="15dip"
+			        android:textStyle="bold"
+			        android:textColor="#B0BFD1" />
+				
+			    <ImageView 
+			        android:id="@+id/platinum_trophy_compare_client"
+			        android:src="@drawable/psn_platinum"
+			        android:layout_width="24dip"
+			        android:layout_height="24dip"
+			        android:layout_toLeftOf="@+id/gameProgressPercent"
+			        android:layout_alignBottom="@+id/gameProgressPercent"
+				    android:contentDescription="@string/psnLevelStarDesc"/>
+		        
+		    </RelativeLayout>
+		    -->
+		    
+    </TableRow>
+
+</TableLayout>

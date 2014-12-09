@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+	<ImageView
+		android:id="@+id/action_list_image"
+		android:src="@drawable/psn_friends_icon" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="20dip"
+        android:contentDescription="@string/actionListImageDesc" />
+    
+    <TextView
+        android:id="@+id/action_list_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/action_list_image"
+        android:layout_toRightOf="@+id/action_list_image"
+        android:layout_marginLeft="10dip"
+        android:textColor="#B2D1D1"
+        android:typeface="sans" 
+        android:textSize="20dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/action_list_subheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#CFCACB"
+        android:textSize="10dip"
+        android:shadowColor="#383838"
+        android:shadowRadius="3"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/action_list_image"
+        android:layout_alignBottom="@+id/action_list_image"/>
+
+     <ImageView
+        android:id="@+id/right_arrow"
+     	android:src="@drawable/arrow"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+     	android:layout_centerVertical="true"
+     	android:contentDescription="@string/rightArrowDesc"/>
+
+</RelativeLayout>

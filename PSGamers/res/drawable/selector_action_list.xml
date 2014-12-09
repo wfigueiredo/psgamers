@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selector style for listrow -->
+	<item android:state_pressed="true" 
+    	  android:drawable="@drawable/blue_gradient" />
+	
+	<item android:state_selected="false"
+    	  android:state_pressed="false" 
+    	  android:drawable="@drawable/white_container" />
+
+	<item android:state_selected="true"
+ 		  android:state_pressed="false" 
+    	  android:drawable="@drawable/blue_gradient" />
+    
+</selector>
